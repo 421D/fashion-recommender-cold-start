@@ -1,0 +1,7 @@
+processed_data/
+*.parquet
+*.json
+*.csv.gz
+*.jsonl.gz
+__pycache__/
+.venv/

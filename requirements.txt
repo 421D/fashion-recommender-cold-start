@@ -1,0 +1,19 @@
+# Fashion Recommender - 团队统一依赖
+#
+# 团队统一使用 Python 3.10（已完整验证：数据处理全流程在此版本下跑通，
+# 结果和3.13环境完全一致；scikit-surprise在此版本下也已验证可正常安装）
+#
+# 安装方式：
+#   pip install -r requirements.txt
+
+pandas==2.3.3
+pyarrow==25.0.0
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn>=1.3
+scikit-surprise==1.1.5
+requests>=2.31
+matplotlib>=3.7
+
+# 不需要安装 `datasets` 库（Hugging Face）——已改成直接下载官方jsonl.gz文件
+# 解析，绕开了该库4.0+版本移除loading script支持导致的报错。
